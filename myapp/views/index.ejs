@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="myapp">
+
+<head>
+  <title>myapp</title>
+  <meta charset="utf-8">
+  <base href="/" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/ngApp/css/site.css"/>
+</head>
+
+<body>
+
+  <header>
+  <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand"<a ui-sref="home" >Home</a>
+    </div>
+
+    <ul class="nav navbar-nav navbar-right">
+      <li><a ui-sref="forecast"><i class="fa fa-home"></i> AngularJS Weather</a></li>
+    </ul>
+  </div>
+  </nav>
+</header>
+
+    <div class="container">
+      <!-- Insert view -->
+
+    <ui-view></ui-view>
+
+
+    </div>
+
+  <script src="/bower_components/angular/angular.min.js"></script>
+  <script src="/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="/bower_components/angular-resource/angular-resource.min.js"></script>
+  <script src="/bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="/bower_components/angular-touch/angular-touch.min.js"></script>
+  <script src="/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+
+  <script src="/ngApp/app.js"></script>
+  <script src="/ngApp/controllers/controllers.js"></script>
+  <script src="/ngApp/services/services.js"></script>
+
+</body>
+
+</html>

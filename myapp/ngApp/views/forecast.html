@@ -1,0 +1,22 @@
+<div>
+<h2>
+    Forecast For: {{controller.city}}
+</h2>
+<p>
+  <a ui-sref="home">Back to search</a>
+</p>
+
+<div ng-repeat="weather in controller.weatherResult.list">
+  <div class="row">
+    <div class=col-md-12>
+      <div class="panel panel-default">
+        <div class="panel panel-heading">
+          <h3 class="panel-title">{{controller.convertToDate(weather.dt) | date: "MMM d, y"}}
+        </div>
+        <div class="panel-body">
+          Daytime Temp: {{controller.convertToF(weather.temp.day)}} &#8457
+        </div>
+      </div>
+    </div>
+</div>
+</div>

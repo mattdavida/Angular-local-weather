@@ -1,0 +1,4 @@
+//Directive
+myapp.directive("weatherReport", () => {
+
+})
